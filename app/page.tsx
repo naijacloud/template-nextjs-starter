@@ -16,8 +16,8 @@ export default function Home() {
         <p className="eyebrow">Next.js 15 · App Router</p>
         <h1>It works. Now make it yours.</h1>
         <p className="lead">
-          Edit <code>app/page.tsx</code> and push. Every commit builds and
-          deploys on its own.
+          Edit <code>app/page.tsx</code>, push it, and redeploy. This page
+          is yours to replace.
         </p>
       </section>
       <section className="grid">
