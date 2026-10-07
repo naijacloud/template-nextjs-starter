@@ -1,4 +1,4 @@
-const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'My app';
+import { siteName } from '@/lib/site';
 
 const links = [
   { href: '/api/hello', label: 'GET /api/hello', note: 'A JSON API route' },
@@ -6,11 +6,12 @@ const links = [
 ];
 
 export default function Home() {
+  const name = siteName();
   return (
     <main className="wrap">
       <header className="bar">
         <span className="logo" aria-hidden="true" />
-        <span className="name">{siteName}</span>
+        <span className="name">{name}</span>
       </header>
       <section className="hero">
         <p className="eyebrow">Next.js 15 · App Router</p>
@@ -28,8 +29,8 @@ export default function Home() {
           </a>
         ))}
         <div className="card muted">
-          <code>NEXT_PUBLIC_SITE_NAME</code>
-          <span>Set it to rename this page: now &ldquo;{siteName}&rdquo;</span>
+          <code>SITE_NAME</code>
+          <span>Set it to rename this page: now &ldquo;{name}&rdquo;</span>
         </div>
       </section>
     </main>

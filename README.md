@@ -18,7 +18,7 @@ Click **Deploy** above, or open <https://naijacloud.com/new?template=nextjs-star
 
 | Name | What it's for | Default |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_NAME` | Shown in the page title and header | `My app` |
+| `SITE_NAME` | Shown in the page title and header (read at request time) | `My app` |
 
 ## Run it locally
 
