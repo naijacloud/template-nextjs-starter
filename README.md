@@ -13,6 +13,7 @@ Click **Deploy** above, or open <https://naijacloud.com/new?template=nextjs-star
 - Next.js 15 with the App Router and TypeScript
 - A JSON route at `/api/hello` and a health check at `/healthz`
 - No Dockerfile: Naijacloud detects Next.js, runs `npm ci && npm run build`, then `npm run start` on `$PORT`
+- A Naijacloud welcome page (light and dark) with your next steps: connect your repo, add a domain, a database or storage. Replace `app/page.tsx` with your own app; the links back to Naijacloud live in `lib/naijacloud.ts`
 
 ## Environment variables
 
